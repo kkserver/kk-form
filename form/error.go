@@ -1,0 +1,7 @@
+package form
+
+const ERROR_FORM = 0x70000
+
+const ERROR_FORM_NAME = ERROR_FORM + 1
+
+const ERROR_FORM_NOT_FOUND = ERROR_FORM + 2
