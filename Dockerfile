@@ -10,21 +10,9 @@ COPY ./config /config
 
 COPY ./app.ini /app.ini
 
-COPY ./lib/lua /lib/lua
-
-COPY ./web /web
-
-COPY ./static /static
-
-COPY ./view /view
-
-ENV LUA_PATH /lib/lua/?.lua;;
-
 ENV KK_ENV_CONFIG /config/env.ini
 
 VOLUME /config
-
-EXPOSE 80
 
 CMD kk-form $KK_ENV_CONFIG
 
